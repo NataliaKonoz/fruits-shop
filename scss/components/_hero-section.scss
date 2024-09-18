@@ -1,0 +1,113 @@
+.hero-section {
+  height: 978px;
+
+  @media screen and (max-width: $--bp-desktop) {
+    height: auto;
+  }
+
+  &__main-container {
+    max-width: 470px;
+  }
+
+  &__container-title {
+    height: 122px;
+    width: 900px;
+
+    @media screen and (max-width: $--bp-tablet) {
+      width: 700px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 335px;
+      height: 116px;
+    }
+  }
+
+  &__title {
+    max-width: 900px;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
+    color: var(--color-brand-white);
+    text-transform: uppercase;
+
+    @media screen and (max-width: $--bp-tablet) {
+      font-size: 50px;
+      max-width: 700px;
+      line-height: 1.1;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      font-size: 28px;
+      max-width: 335px;
+      line-height: 1;
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      background-size: cover;
+    }
+
+    &::before {
+      width: 184px;
+      height: 124px;
+      background-image: url(../images/hero-section-photo/banana.png);
+
+      @media screen and (max-width: $--bp-tablet) {
+        width: 172px;
+        height: 124px;
+      }
+
+      @media screen and (max-width: $--bp-mobile) {
+        width: 96px;
+        height: 76px;
+      }
+    }
+
+    &::after {
+      background-image: url(../images/hero-section-photo/strawberry.png);
+      width: 120px;
+      height: 120px;
+
+      @media screen and (max-width: $--bp-tablet) {
+        width: 100px;
+        height: 110px;
+      }
+
+      @media screen and (max-width: $--bp-mobile) {
+        width: 76px;
+        height: 76px;
+      }
+    }
+  }
+
+  &__photo-girl {
+    width: 490px;
+    height: 700px;
+    background-image: url(../images/hero-section-photo/border.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 320px;
+      height: 490px;
+    }
+  }
+
+  &__button {
+    color: var(--color-brand-red);
+    background-color: var(--color-brand-white);
+    font-size: 28px;
+    line-height: 1;
+
+    @media screen and (max-width: $--bp-mobile) {
+      font-size: 20px;
+    }
+  }
+
+  &__photo-strawberry-basket {
+    max-width: 162px;
+    height: 185px;
+  }
+}

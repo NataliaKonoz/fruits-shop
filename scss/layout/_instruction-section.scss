@@ -1,0 +1,56 @@
+.instruction-section {
+  &__title {
+    margin: 0 auto;
+    padding-bottom: 14px;
+    text-align: center;
+  }
+
+  &__description {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 44px;
+  }
+
+  &__steps {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 80px;
+
+    @media screen and (max-width: $--bp-desktop) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      gap: 20px;
+      margin-bottom: 44px;
+    }
+  }
+
+  &__gif {
+    margin: 0 auto;
+
+    &--desktop {
+      @media screen and (max-width: $--bp-tablet) {
+        display: none;
+      }
+    }
+
+    &--tablet {
+      @media screen and (min-width: $--bp-tablet) {
+        display: none;
+      }
+
+      @media screen and (max-width: $--bp-mobile) {
+        display: none;
+      }
+    }
+
+    &--mobile {
+      @media screen and (min-width: $--bp-mobile) {
+        display: none;
+      }
+    }
+  }
+}

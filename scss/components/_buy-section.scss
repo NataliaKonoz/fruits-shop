@@ -1,0 +1,96 @@
+.buy-section {
+  &__title {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: var(--color-brand-white);
+    text-transform: uppercase;
+
+    @media screen and (max-width: $--bp-mobile) {
+      font-size: 28px;
+      line-height: 1;
+    }
+  }
+
+  &__description {
+    width: 660px;
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 344px;
+    }
+  }
+
+  &__list-item {
+    background-repeat: no-repeat;
+    &--strawberry {
+      background-color: #f8766b;
+      background-image: url(../images/commodity/product-strawberry.png);
+    }
+
+    &--banana {
+      background-color: #edd251;
+      background-image: url(../images/commodity/product-banana.png);
+    }
+
+    &--watermelon {
+      background-color: #9dc262;
+      background-image: url(../images/commodity/product-watermelon.png);
+    }
+
+    &--lime {
+      background-color: #bfd663;
+      background-image: url(../images/commodity/product-lime.png);
+    }
+
+    &--apple {
+      background-color: #e93f29;
+      background-image: url(../images/commodity/product-apple.png);
+    }
+
+    &--peach {
+      background-color: #db4f4b;
+      background-image: url(../images/commodity/product-peach.png);
+    }
+
+    &--plum {
+      background-color: #9b5366;
+      background-image: url(../images/commodity/product-plum.png);
+    }
+
+    &--orange {
+      background-color: #f47f4c;
+      background-image: url(../images/commodity/product-orange.png);
+    }
+
+    &--kiwi {
+      background-color: #98b37e;
+      background-image: url(../images/commodity/product-kiwi.png);
+    }
+  }
+
+  &__button {
+    color: var(--color-brand-white);
+    background-color: #9dc262;
+    font-size: 18px;
+
+    @media screen and (max-width: $--bp-mobile) {
+      font-size: 14px;
+    }
+
+    &:hover .buy-section__button-icon {
+      fill: var(--color-brand-green);
+      transition: fill 0.3s;
+    }
+
+    &:hover {
+      background-color: var(--color-brand-white);
+      transition: background-color 0.3s;
+    }
+  }
+
+  &__button-icon {
+    fill: var(--color-brand-white);
+    width: 14px;
+    height: 14px;
+  }
+}

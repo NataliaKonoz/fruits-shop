@@ -1,0 +1,55 @@
+.buy-section {
+  padding-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: $--bp-tablet) {
+    padding-top: 144px;
+  }
+
+  @media screen and (max-width: $--bp-mobile) {
+    padding-top: 80px;
+  }
+
+  &__title {
+    padding-bottom: 14px;
+    text-align: center;
+  }
+
+  &__description {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 44px;
+  }
+
+  &__list-fruits {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 0 12px;
+    justify-content: space-around;
+    margin-bottom: 44px;
+
+    @media screen and (max-width: $--bp-tablet) {
+      padding: 0 24px;
+    }
+  }
+
+  &__list-item {
+    background-position-x: center;
+    background-position-y: 125px;
+  }
+
+  &__button {
+    transform: rotate(-14deg);
+    margin: 0 auto;
+
+    @media screen and (max-width: $--bp-mobile) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+}

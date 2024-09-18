@@ -1,0 +1,19 @@
+.order-instructions {
+  width: 390px;
+  height: 128px;
+  background-color: var(--color-brand-white);
+  border-radius: 20px;
+
+  &__number {
+    width: 150px;
+    height: 48px;
+    border-radius: 200px;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__description {
+    color: black;
+    max-width: 204px;
+  }
+}

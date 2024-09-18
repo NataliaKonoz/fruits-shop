@@ -1,0 +1,26 @@
+.fruit-card {
+  text-align: center;
+  padding: 28px 24px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+  }
+
+  &__photo {
+    z-index: 1;
+  }
+
+  &__text {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    z-index: 1;
+    max-width: 150px;
+  }
+}

@@ -1,0 +1,16 @@
+.teg {
+  border: 1px solid var(--color-brand-white);
+  border-radius: 1000px;
+  font-weight: 500;
+  line-height: 1.16;
+  font-size: 12px;
+
+  @media screen and (max-width: $--bp-mobile) {
+    width: 125px;
+  }
+
+  &__name {
+    color: var(--color-brand-white);
+    text-transform: uppercase;
+  }
+}

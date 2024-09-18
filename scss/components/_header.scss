@@ -1,0 +1,11 @@
+.header {
+  background-color: var(--color-brand-white);
+
+  &__container {
+    max-width: 1280px;
+  }
+
+  &__logo {
+    min-width: 156px;
+  }
+}

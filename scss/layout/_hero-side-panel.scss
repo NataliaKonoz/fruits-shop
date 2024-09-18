@@ -1,0 +1,74 @@
+.hero-side-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @media screen and (max-width: $--bp-desktop) {
+    padding-top: 62px;
+  }
+
+  @media screen and (max-width: $--bp-mobile) {
+    align-items: center;
+  }
+
+  &--left {
+    padding-bottom: 150px;
+
+    @media screen and (max-width: $--bp-desktop) {
+      grid-row: 2;
+      grid-column: 1 / 2;
+      align-self: start;
+      padding-bottom: 0;
+
+      @media screen and (max-width: $--bp-mobile) {
+        grid-column: 1 / 1;
+        padding-top: 70px;
+        align-self: center;
+      }
+    }
+  }
+
+  &__text {
+    padding-bottom: 44px;
+  }
+
+  &__title-watermelon-card {
+    flex: 1;
+  }
+
+  &--right {
+    padding-bottom: 246px;
+    align-items: flex-end;
+
+    @media screen and (max-width: $--bp-desktop) {
+      grid-row: 2;
+      grid-column: 3 / 4;
+      padding-bottom: 0;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      grid-column: 1 / 1;
+      grid-row: 3;
+      align-items: center;
+      flex-direction: column-reverse;
+      padding-top: 44px;
+    }
+  }
+
+  &__title-strawberry-card {
+    padding-bottom: 16px;
+  }
+
+  &__list-teg {
+    padding-top: 44px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    @media screen and (max-width: $--bp-mobile) {
+      padding-top: 0;
+      padding-bottom: 44px;
+    }
+  }
+}

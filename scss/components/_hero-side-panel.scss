@@ -1,0 +1,30 @@
+.hero-side-panel {
+  &__text {
+    max-width: 220px;
+
+    @media screen and (max-width: $--bp-desktop) {
+      max-width: 280px;
+    }
+  }
+
+  &__watermelon-card {
+    background-color: var(--color-brand-green);
+  }
+
+  &__strawberry-card {
+    background-color: var(--color-brand-yellow);
+  }
+
+  &__photo-strawberry-card {
+    max-width: 162px;
+    height: 185px;
+  }
+
+  &__list-teg {
+    max-width: 282px;
+
+    @media screen and (max-width: $--bp-mobile) {
+      max-width: 258px;
+    }
+  }
+}

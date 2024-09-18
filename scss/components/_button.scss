@@ -1,0 +1,19 @@
+.button {
+  width: 114px;
+  height: 114px;
+  border-radius: 50%;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  @media screen and (max-width: $--bp-mobile) {
+    width: 80px;
+    height: 80px;
+  }
+
+  &:hover {
+    color: var(--color-brand-green);
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+}

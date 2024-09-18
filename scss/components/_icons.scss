@@ -1,0 +1,15 @@
+.icons {
+  fill: var(--color-brand-red);
+  width: 32px;
+  height: 32px;
+
+  @media screen and (max-width: $--bp-tablet) {
+    width: 28px;
+    height: 28px;
+  }
+
+  @media screen and (max-width: $--bp-mobile) {
+    width: 24px;
+    height: 24px;
+  }
+}
