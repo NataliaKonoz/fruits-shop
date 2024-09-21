@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header open">
+    <header class="header">
       <div class="header__container">
         <nav class="header__section header__section--mobile">
           <ul class="navigation">
@@ -54,19 +54,19 @@
           class="header__section header__icon-menu-burger header__icon-menu-burger--open"
           href="#"
         >
-          <svg class="icons" id="burger">
+          <svg class="icons icons--pointer" id="burger-on">
             <use href="./images/icons.svg#icon-menu-burger"></use>
           </svg>
         </button>
-        <!--  <button
+        <button
           type="button"
           class="header__section header__icon-menu-burger header__icon-menu-burger--close"
           href="#"
         >
-          <svg class="icons">
-            <use href="./images/icons.svg#icon-menu-burger"></use>
+          <svg class="icons icons--pointer" id="burger-off">
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
-        </button>-->
+        </button>
       </div>
     </header>
     <main>

@@ -1,6 +1,6 @@
-const btnBurger = document.querySelector('#burger');
+const btnBurgerOff = document.querySelector('#burger-off');
 const header = document.querySelector('header');
 
-btnBurger.addEventListener('click', () => {
+btnBurgerOff.addEventListener('click', () => {
   header.classList.toggle('open');
 });

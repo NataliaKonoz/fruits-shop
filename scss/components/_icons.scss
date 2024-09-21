@@ -13,6 +13,10 @@
     height: 24px;
   }
 
+  &--pointer {
+    cursor: pointer;
+  }
+
   &__menu-burger {
     fill: var(--color-brand-white);
   }

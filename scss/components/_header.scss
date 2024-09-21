@@ -10,7 +10,7 @@
       @media screen and (max-width: $--bp-mobile) {
         background-color: var(--color-brand-red);
         width: 100%;
-        height: 762px;
+        height: 200px;
         transition: transform 1s;
       }
     }
@@ -20,13 +20,30 @@
     min-width: 156px;
   }
 
+  &.open {
+    .header__icon-menu-burger--open {
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .header__icon-menu-burger--close {
+      opacity: 1;
+      transition: opacity 0.3s;
+    }
+  }
+
   &__icon-menu-burger {
     border: none;
     background-color: transparent;
 
     &--open {
       opacity: 1;
-      transition: opacity 1s;
+      transition: opacity 0.3s;
+    }
+
+    &--close {
+      opacity: 0;
+      transition: opacity 0.3s;
     }
   }
 }
