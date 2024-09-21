@@ -6,6 +6,21 @@
 
   @media screen and (max-width: $--bp-mobile) {
     padding: 16px 20px;
+    position: relative;
+  }
+
+  &.open {
+    @media screen and (max-width: $--bp-mobile) {
+      .header__section--mobile {
+        display: block;
+        transform: translateX(-100%);
+      }
+
+      .header__icon-menu-burger--open {
+        opacity: 0;
+        transition: opacity 1s;
+      }
+    }
   }
 
   &__container {
@@ -15,17 +30,21 @@
     align-items: center;
     margin: 0 auto;
     text-align: center;
-
-    & nav {
-      display: flex;
-      @media screen and (max-width: $--bp-mobile) {
-        display: none;
-      }
-    }
   }
 
   &__section {
     flex: 1;
+
+    &--mobile {
+      @media screen and (max-width: $--bp-mobile) {
+        position: absolute;
+        top: 56px;
+        padding-top: 124px;
+        z-index: 2;
+        left: 100%;
+        display: none;
+      }
+    }
   }
 
   &__icon-package {

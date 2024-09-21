@@ -1,17 +1,20 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px 32px;
-  align-items: center;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 32px;
+    align-items: center;
+    margin: 0 auto;
 
-  @media screen and (max-width: $--bp-tablet) {
-    display: grid;
-    grid-template-columns: auto 1fr;
-  }
+    @media screen and (max-width: $--bp-tablet) {
+      display: grid;
+      grid-template-columns: auto 1fr;
+    }
 
-  @media screen and (max-width: $--bp-mobile) {
-    display: grid;
-    grid-template-columns: 1fr;
+    @media screen and (max-width: $--bp-mobile) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__contain-logo {

@@ -2,4 +2,16 @@
   display: flex;
   gap: 20px;
   align-items: center;
+
+  @media screen and (max-width: $--bp-mobile) {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__menu-burger-contain-icon {
+    display: none;
+    @media screen and (max-width: $--bp-mobile) {
+      display: block;
+    }
+  }
 }

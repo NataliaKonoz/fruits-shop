@@ -1,5 +1,11 @@
 .navigation {
   &__link {
     color: var(--color-brand-red);
+
+    &--mobile {
+      @media screen and (max-width: $--bp-mobile) {
+        color: var(--color-brand-white);
+      }
+    }
   }
 }

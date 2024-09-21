@@ -7,20 +7,37 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+    <header class="header open">
       <div class="header__container">
-        <nav class="header__section">
+        <nav class="header__section header__section--mobile">
           <ul class="navigation">
             <li>
-              <a class="navigation__link" href="#instruction-section"
+              <a
+                class="navigation__link navigation__link--mobile"
+                href="#instruction-section"
                 >Як це працює
               </a>
             </li>
             <li>
-              <a class="navigation__link" href="#buy-section">Фрукти </a>
+              <a
+                class="navigation__link navigation__link--mobile"
+                href="#buy-section"
+                >Фрукти
+              </a>
             </li>
             <li>
-              <a class="navigation__link" href="#contacts-section">Контакти</a>
+              <a
+                class="navigation__link navigation__link--mobile"
+                href="#contacts-section"
+                >Контакти</a
+              >
+            </li>
+            <li class="navigation__menu-burger-contain-icon">
+              <a class="header__section" href="#">
+                <svg class="icons icons__menu-burger">
+                  <use href="./images/icons.svg#icon-package"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </nav>
@@ -32,11 +49,24 @@
             <use href="./images/icons.svg#icon-package"></use>
           </svg>
         </a>
-        <a class="header__section header__icon-menu-burger" href="#">
+        <button
+          type="button"
+          class="header__section header__icon-menu-burger header__icon-menu-burger--open"
+          href="#"
+        >
+          <svg class="icons" id="burger">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+        <!--  <button
+          type="button"
+          class="header__section header__icon-menu-burger header__icon-menu-burger--close"
+          href="#"
+        >
           <svg class="icons">
             <use href="./images/icons.svg#icon-menu-burger"></use>
           </svg>
-        </a>
+        </button>-->
       </div>
     </header>
     <main>
@@ -307,64 +337,67 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__contain-logo">
-        <img
-          src="./images/footer/image-girl-with-banana.png"
-          alt="girl-with-banana"
-        />
-        <a class="footer__logo" href="">
-          <img src="./images/logo.svg" alt="logo" />
-        </a>
-      </div>
-      <nav class="footer__nav">
-        <ul class="navigation">
-          <li>
-            <a class="navigation__link" href="#instruction-section"
-              >Як це працює</a
-            >
-          </li>
-          <li>
-            <a class="navigation__link" href="#fruits-section">Фрукти</a>
-          </li>
-          <li>
-            <a class="navigation__link" href="#contacts-section">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="footer__contain-contact">
-        <div class="footer__container-icons">
-          <a class="footer__icon" href="#">
-            <svg class="icons">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          <a class="footer__icon" href="#">
-            <svg class="icons">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-          <a class="footer__icon" href="#">
-            <svg class="icons">
-              <use href="./images/icons.svg#icon-youtube"></use>
-            </svg>
+      <div class="footer__container">
+        <div class="footer__contain-logo">
+          <img
+            src="./images/footer/image-girl-with-banana.png"
+            alt="girl-with-banana"
+          />
+          <a class="footer__logo" href="">
+            <img src="./images/logo.svg" alt="logo" />
           </a>
         </div>
-        <ul>
-          <li class="footer__tel">
-            <a class="footer__contact-item" href="tel:+380 (68) 443-94-26"
-              >+380 (68) 443-94-26</a
-            >
-          </li>
-          <li class="footer__adress">
-            <a
-              class="footer__contact-item"
-              href="https://maps.app.goo.gl/s96GcKp2SFNfpGsU8"
-              target="_blank"
-              >1678 S. Pioneer Road Salt Lake City <br />UT 84104</a
-            >
-          </li>
-        </ul>
+        <nav class="footer__nav">
+          <ul class="navigation">
+            <li>
+              <a class="navigation__link" href="#instruction-section"
+                >Як це працює</a
+              >
+            </li>
+            <li>
+              <a class="navigation__link" href="#fruits-section">Фрукти</a>
+            </li>
+            <li>
+              <a class="navigation__link" href="#contacts-section">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__contain-contact">
+          <div class="footer__container-icons">
+            <a class="footer__icon" href="#">
+              <svg class="icons">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            <a class="footer__icon" href="#">
+              <svg class="icons">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a class="footer__icon" href="#">
+              <svg class="icons">
+                <use href="./images/icons.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </div>
+          <ul>
+            <li class="footer__tel">
+              <a class="footer__contact-item" href="tel:+380 (68) 443-94-26"
+                >+380 (68) 443-94-26</a
+              >
+            </li>
+            <li class="footer__adress">
+              <a
+                class="footer__contact-item"
+                href="https://maps.app.goo.gl/s96GcKp2SFNfpGsU8"
+                target="_blank"
+                >1678 S. Pioneer Road Salt Lake City <br />UT 84104</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
+    <script defer src="./js/main.js"></script>
   </body>
 </html>
