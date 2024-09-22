@@ -1,16 +1,17 @@
-const btnBurgerOff = document.querySelector('#burger-off');
+const btnBurgerOff = document.querySelector('#burger');
 const btnBurgerPackage = document.querySelector('#burger-package');
-const header = document.querySelector('header');
+const menu = document.querySelector('.header__section--mobile');
 const linkBurger = document.querySelector('.navigation__link--mobile');
 
 btnBurgerOff.addEventListener('click', () => {
-  header.classList.toggle('open');
+  menu.classList.toggle('open');
+  btnBurgerOff.classList.toggle('open');
 });
 
 linkBurger.addEventListener('click', () => {
-  header.classList.remove('open');
+  menu.classList.remove('open');
 });
 
 btnBurgerPackage.addEventListener('click', () => {
-  header.classList.remove('open');
+  menu.classList.remove('open');
 });
