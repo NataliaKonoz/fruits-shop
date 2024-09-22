@@ -41,7 +41,12 @@
     background-position-y: 125px;
   }
 
-  &__button {
+  &__container-button {
+    position: relative;
+    display: flex;
+  }
+
+  &__button-buy {
     margin: 0 auto;
 
     @media screen and (max-width: $--bp-mobile) {
@@ -49,6 +54,23 @@
       justify-content: center;
       align-items: center;
       gap: 4px;
+    }
+  }
+
+  &__button-show-all {
+    position: absolute;
+    right: 110px;
+    top: -30px;
+    padding: 8px 10px;
+
+    @media screen and (max-width: $--bp-tablet) {
+      right: 90px;
+      top: -30px;
+    }
+
+    @media screen and (max-width: $--bp-mobile) {
+      right: 60px;
+      top: -35px;
     }
   }
 }

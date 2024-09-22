@@ -20,6 +20,15 @@
     }
   }
 
+  &__list-fruits {
+    max-height: 978px;
+    overflow: hidden;
+
+    &.show-all {
+      max-height: 100%;
+    }
+  }
+
   &__list-item {
     background-repeat: no-repeat;
     transition: box-shadow 5s;
@@ -75,7 +84,7 @@
     }
   }
 
-  &__button {
+  &__button-buy {
     color: var(--color-brand-white);
     background-color: #9dc262;
     font-size: 18px;
@@ -110,5 +119,22 @@
     fill: var(--color-brand-white);
     width: 14px;
     height: 14px;
+  }
+
+  &__button-show-all {
+    background-color: var(--color-brand-green);
+    border: none;
+    color: var(--color-brand-white);
+    max-width: 104px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.5s, box-shadow 1s;
+
+    &:hover {
+      color: var(--color-brand-green);
+      background-color: var(--color-brand-white);
+      transition: color 0.3s, background-color 0.5s, box-shadow 1s;
+      box-shadow: 0 0 40px rgb(245, 67, 54);
+    }
   }
 }

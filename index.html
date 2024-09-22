@@ -291,12 +291,21 @@
             <p class="fruit__price">90 UAH / kg</p>
           </li>
         </ul>
-        <button class="button buy-section__button" type="button">
-          <svg class="buy-section__button-icon">
-            <use href="./images/icons.svg#icon-arrow"></use>
-          </svg>
-          order
-        </button>
+        <div class="buy-section__container-button">
+          <button class="button buy-section__button-buy" type="button">
+            <svg class="buy-section__button-icon">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+            order
+          </button>
+          <button
+            class="buy-section__button-show-all"
+            id="showAllBtn"
+            type="button"
+          >
+            Дивитися все
+          </button>
+        </div>
       </section>
       <section class="contacts-section" id="contacts-section">
         <div class="contacts-section__container-title">
@@ -401,6 +410,7 @@
         </div>
       </div>
     </footer>
-    <script defer src="./js/main.js"></script>
+    <script defer src="./js/burger-menu.js"></script>
+    <script defer src="./js/show-all.js"></script>
   </body>
 </html>
