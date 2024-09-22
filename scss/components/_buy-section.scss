@@ -22,6 +22,13 @@
 
   &__list-item {
     background-repeat: no-repeat;
+    transition: box-shadow 5s;
+
+    &:hover {
+      box-shadow: 0px 0px 40px rgba(245, 67, 54, 1);
+      transition: box-shadow 0.3s;
+    }
+
     &--strawberry {
       background-color: #f8766b;
       background-image: url(../images/commodity/product-strawberry.png);
@@ -72,11 +79,21 @@
     color: var(--color-brand-white);
     background-color: #9dc262;
     font-size: 18px;
+    animation: dance 1s infinite;
+    transition: background-color 1s, box-shadow 0.5s;
 
     @media screen and (max-width: $--bp-mobile) {
       font-size: 14px;
     }
-
+    @keyframes dance {
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
     &:hover .buy-section__button-icon {
       fill: var(--color-brand-green);
       transition: fill 0.3s;
@@ -84,7 +101,8 @@
 
     &:hover {
       background-color: var(--color-brand-white);
-      transition: background-color 0.3s;
+      box-shadow: 0 0 40px rgb(245, 67, 54);
+      transition: background-color 1s, box-shadow 1s;
     }
   }
 

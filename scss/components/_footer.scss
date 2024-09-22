@@ -16,6 +16,12 @@
   &__icon {
     border: 1px solid var(--color-brand-red);
     border-radius: 10px;
+    transition: border-color 0.4s;
+
+    &:hover {
+      border-color: var(--color-brand-yellow);
+      transition: border-color 0.4s;
+    }
   }
 
   &__adress {

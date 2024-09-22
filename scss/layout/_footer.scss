@@ -78,4 +78,10 @@
       padding-bottom: 14px;
     }
   }
+  &__contact-item {
+    &:hover {
+      color: var(--color-brand-green);
+      transition: color 0.3s;
+    }
+  }
 }

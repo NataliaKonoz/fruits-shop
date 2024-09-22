@@ -1,8 +1,13 @@
 .teg {
   padding: 12px 32px;
+  padding-bottom: 10px;
   text-align: center;
 
   @media screen and (max-width: $--bp-mobile) {
     padding: 12px 0;
+  }
+
+  &:hover {
+    padding-top: 8px;
   }
 }

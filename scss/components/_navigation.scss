@@ -2,6 +2,12 @@
   &__link {
     color: var(--color-brand-red);
 
+    &:hover {
+      color: var(--color-brand-green);
+      font-size: 16px;
+      transition: color 0.3s, font-size 0.3s;
+    }
+
     &--mobile {
       @media screen and (max-width: $--bp-mobile) {
         color: var(--color-brand-white);

@@ -72,8 +72,15 @@
   }
 
   &__input-email {
+    padding-left: 16px;
+
     &::placeholder {
       padding-left: 24px;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: var(--color-brand-white);
     }
   }
 
@@ -81,5 +88,27 @@
     position: absolute;
     right: 0;
     padding: 17px 35px;
+    transition: transform 0.2s;
+
+    &:hover {
+      animation: pulse 1s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    /* &:hover {
+      box-shadow: 0 0 40px rgb(245, 67, 54);
+      transition: box-shadow 0.3s;
+    }*/
   }
 }

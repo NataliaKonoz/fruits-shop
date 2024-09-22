@@ -64,7 +64,7 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
 
     @media screen and (max-width: $--bp-mobile) {
       padding-top: 0;
