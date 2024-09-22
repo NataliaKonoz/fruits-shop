@@ -21,7 +21,7 @@
   }
 
   &__list-fruits {
-    max-height: 978px;
+    max-height: 1022px;
     overflow: hidden;
 
     &.show-all {
@@ -34,7 +34,7 @@
     transition: box-shadow 5s;
 
     &:hover {
-      box-shadow: 0px 0px 40px rgba(245, 67, 54, 1);
+      box-shadow: 0px 0px 30px rgba(245, 67, 54, 1);
       transition: box-shadow 0.3s;
     }
 
@@ -125,14 +125,13 @@
     background-color: var(--color-brand-green);
     border: none;
     color: var(--color-brand-white);
-    max-width: 104px;
+    max-width: 120px;
     border-radius: 8px;
     cursor: pointer;
     transition: color 0.3s, background-color 0.5s, box-shadow 1s;
 
     &:hover {
-      color: var(--color-brand-green);
-      background-color: var(--color-brand-white);
+      color: var(--color-brand-yellow);
       transition: color 0.3s, background-color 0.5s, box-shadow 1s;
       box-shadow: 0 0 40px rgb(245, 67, 54);
     }

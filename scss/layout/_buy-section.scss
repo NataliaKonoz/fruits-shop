@@ -20,19 +20,22 @@
   &__description {
     text-align: center;
     margin: 0 auto;
-    padding-bottom: 44px;
   }
 
   &__list-fruits {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    padding: 0 12px;
+    padding: 0 30px;
+    padding-top: 44px;
+    padding-bottom: 16px;
     justify-content: space-around;
     margin-bottom: 44px;
 
     @media screen and (max-width: $--bp-tablet) {
       padding: 0 24px;
+      padding-top: 44px;
+      padding-bottom: 16px;
     }
   }
 
@@ -60,17 +63,17 @@
   &__button-show-all {
     position: absolute;
     right: 110px;
-    top: -30px;
+    top: -40px;
     padding: 8px 10px;
 
     @media screen and (max-width: $--bp-tablet) {
       right: 90px;
-      top: -30px;
+      top: -40px;
     }
 
     @media screen and (max-width: $--bp-mobile) {
       right: 60px;
-      top: -35px;
+      top: -45px;
     }
   }
 }
