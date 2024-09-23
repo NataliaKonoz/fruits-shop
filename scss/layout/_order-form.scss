@@ -5,6 +5,22 @@
     margin: 0 16px;
   }
 
+  &__main-container {
+    position: absolute;
+    top: 34px;
+    left: -126%;
+    margin: 0 auto;
+
+    &.active {
+      left: 3%;
+      right: 3%;
+    }
+
+    .hidden {
+      left: -126%;
+    }
+  }
+
   &__container {
     padding: 40px;
     position: relative;
@@ -22,6 +38,7 @@
     position: absolute;
     top: 20px;
     right: 20px;
+    z-index: 2;
 
     @media screen and (max-width: $--bp-mobile) {
       top: 10px;

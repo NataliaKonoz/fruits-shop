@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <div id="formContainer" class="order-form__main-container">
+      <button id="removeFormBtn" type="button" class="order-form__button-close">
+        <svg class="icons icons--pointer">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+    </div>
     <header class="header">
       <div class="header__container">
         <nav class="header__section header__section--mobile">
@@ -36,7 +43,7 @@
               class="navigation__menu-burger-contain-icon"
               id="burger-package"
             >
-              <a class="header__section" href="#buy-section">
+              <a class="header__section" id="showFormBtn" href="#buy-section">
                 <svg class="icons icons__menu-burger">
                   <use href="./images/icons.svg#icon-package"></use>
                 </svg>
@@ -47,7 +54,11 @@
         <a class="header__section header__logo" href="">
           <img src="./images/logo.svg" alt="logo" />
         </a>
-        <a class="header__section header__icon-package" href="#buy-section">
+        <a
+          class="header__section header__icon-package"
+          id="showFormBtn"
+          href="#buy-section"
+        >
           <svg class="icons">
             <use href="./images/icons.svg#icon-package"></use>
           </svg>
@@ -214,7 +225,6 @@
           органічних фруктів, вирощених без використання шкідливих пестицидів
           або хімікатів.
         </p>
-        <div class="form-container"></div>
         <ul class="buy-section__list-fruits">
           <li
             class="fruit buy-section__list-item buy-section__list-item--strawberry"
@@ -296,7 +306,7 @@
           <button
             class="button buy-section__button-buy"
             type="button"
-            id="orderBtn"
+            id="showFormBtn"
           >
             <svg class="buy-section__button-icon">
               <use href="./images/icons.svg#icon-arrow"></use>

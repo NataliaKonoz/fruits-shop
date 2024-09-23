@@ -7,6 +7,16 @@
     overflow: hidden;
   }
 
+  &__main-container {
+    transition: left 0.5s ease;
+    z-index: 2;
+    max-width: 900px;
+  }
+
+  &__container {
+    box-shadow: 0 0 40px rgb(109, 29, 29);
+  }
+
   &__title {
     text-transform: uppercase;
     color: var(--color-brand-red);
