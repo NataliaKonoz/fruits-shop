@@ -1,10 +1,13 @@
-const formContainer = document.getElementById('formContainer');
 const loadFormBtn = document.querySelectorAll('[id^="showFormBtn"]');
 const removeFormBtn = document.querySelector('#removeFormBtn');
 const main = document.getElementById('mainContent');
 const footer = document.getElementById('footer');
+const btnThanksClose = document.getElementById('btnThanksClose');
+const thanksBlock = document.getElementById('thanksBlock');
 
 document.addEventListener('DOMContentLoaded', function () {
+  const formContainer = document.getElementById('formContainer'); // Перемістіть сюди
+
   fetch('/pages/order-form.html')
     .then(response => response.text())
     .then(data => {
@@ -24,26 +27,40 @@ document.addEventListener('DOMContentLoaded', function () {
           }
         });
       });
+      const main = document.getElementById('mainContent');
+      const footer = document.getElementById('footer');
+      const btnSubmit = document.querySelector('#btnSubmit');
+      btnSubmit.addEventListener('click', () => {
+        thanksBlock.classList.add('active');
+        formContainer.classList.remove('active');
+        formContainer.classList.add('hidden');
+        main.style.display = 'block';
+        footer.style.display = 'block';
+      });
     });
-});
 
-formContainer.classList.add('hidden');
-loadFormBtn.forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (formContainer.classList.contains('hidden')) {
-      formContainer.classList.remove('hidden');
-      formContainer.classList.add('active');
-      main.style.display = 'none';
-      footer.style.display = 'none';
+  formContainer.classList.add('hidden'); // Перемістіть це тут
+  loadFormBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (formContainer.classList.contains('hidden')) {
+        formContainer.classList.remove('hidden');
+        formContainer.classList.add('active');
+        main.style.display = 'none';
+        footer.style.display = 'none';
+      }
+    });
+  });
+
+  removeFormBtn.addEventListener('click', () => {
+    if (formContainer.classList.contains('active')) {
+      formContainer.classList.remove('active');
+      formContainer.classList.add('hidden');
+      main.style.display = 'block';
+      footer.style.display = 'block';
     }
   });
-});
 
-removeFormBtn.addEventListener('click', () => {
-  if (formContainer.classList.contains('active')) {
-    formContainer.classList.remove('active');
-    formContainer.classList.add('hidden');
-    main.style.display = 'block';
-    footer.style.display = 'block';
-  }
+  btnThanksClose.addEventListener('click', () => {
+    thanksBlock.classList.remove('active');
+  });
 });

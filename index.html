@@ -7,13 +7,6 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <div id="formContainer" class="order-form__main-container">
-      <button id="removeFormBtn" type="button" class="order-form__button-close">
-        <svg class="icons icons--pointer">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-    </div>
     <header class="header">
       <div class="header__container">
         <nav class="header__section header__section--mobile">
@@ -83,6 +76,27 @@
         </button>
       </div>
     </header>
+    <div id="thanksBlock" class="thanks">
+      <div class="thanks__container">
+        <button id="btnThanksClose" type="button" class="thanks__button">
+          <svg class="icons icons--pointer">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <img
+          class="thanks__images"
+          src="../images/order-form/raspberry-bunch.png"
+          alt="raspberry bunch"
+        />
+        <h2 class="thanks__title">THANK YOU</h2>
+        <p class="thanks__text">
+          Дякуємо за замовлення! Наша команда готує ваш ящик зі свіжими смачними
+          фруктами та овочами, і ми доставимо його прямо до вашого порогу. Ми
+          цінуємо ваш бізнес і сподіваємось надати вам найкращий досвід!
+        </p>
+      </div>
+    </div>
+
     <main id="mainContent">
       <div class="hero-section__container-title">
         <h1 class="hero-section__title">
@@ -429,4 +443,11 @@
     <script defer src="./js/form.js"></script>
     <script defer src="./js/show-all.js"></script>
   </body>
+  <div id="formContainer" class="order-form__main-container">
+    <button id="removeFormBtn" type="button" class="order-form__button-close">
+      <svg class="icons icons--pointer">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
 </html>

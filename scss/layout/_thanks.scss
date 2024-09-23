@@ -1,0 +1,38 @@
+.thanks {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 2;
+  top: 90px;
+  transition: right 0.5s ease;
+  right: -100%;
+
+  &.active {
+    position: absolute;
+    right: 40px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__button {
+    position: absolute;
+    top: -20px;
+    right: 15px;
+  }
+
+  &__images {
+    margin: 0 auto;
+  }
+
+  &__title {
+    padding-top: 28px;
+    padding-bottom: 14px;
+  }
+
+  &__text {
+    margin: 0 auto;
+  }
+}
