@@ -1,0 +1,115 @@
+<form class="order-form" name="order-form">
+  <div class="order-form__container">
+    <h2 class="order-form__title">Ваше замовлення</h2>
+    <button type="button" class="order-form__button-close">
+      <svg class="icons icons--pointer">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <ul class="order-form__list">
+      <li class="order-form__list-item order-form__list-item--pink">
+        <div class="order-form__container-checkbox-mark">
+          <span
+            class="order-form__checkbox-mark order-form__checkbox-mark--left"
+          ></span>
+          <span
+            class="order-form__checkbox-mark order-form__checkbox-mark--right"
+          ></span>
+        </div>
+        <div class="order-form__checkbox"></div>
+        <div>
+          <h3 class="order-form__list-title">Кошик з полуницею</h3>
+          <p>plant</p>
+        </div>
+        <img
+          class="order-form__list-image"
+          src="../images/order-form/strawberry-basket.png"
+          alt="strawberry-basket"
+        />
+      </li>
+      <li class="order-form__list-item order-form__list-item--yellow">
+        <div class="order-form__container-checkbox-mark">
+          <span
+            class="order-form__checkbox-mark order-form__checkbox-mark--left"
+          ></span>
+          <span
+            class="order-form__checkbox-mark order-form__checkbox-mark--right"
+          ></span>
+        </div>
+        <div class="order-form__checkbox"></div>
+        <div>
+          <h3 class="order-form__list-title">Кошик з яблуками</h3>
+          <p>plant</p>
+        </div>
+        <img
+          class="order-form__list-image"
+          src="../images/order-form/apple-basket.png"
+          alt="apple-basket"
+        />
+      </li>
+      <li class="order-form__list-item order-form__list-item--green">
+        <div class="order-form__container-checkbox-mark">
+          <span
+            class="order-form__checkbox-mark order-form__checkbox-mark--left"
+          ></span>
+          <span
+            class="order-form__checkbox-mark order-form__checkbox-mark--right"
+          ></span>
+        </div>
+        <div class="order-form__checkbox"></div>
+        <div>
+          <h3 class="order-form__list-title">Кошик з фруктами</h3>
+          <p>plant</p>
+        </div>
+        <img
+          class="order-form__list-image"
+          src="../images/order-form/fruits-basket.png"
+          alt="fruits-basket"
+        />
+      </li>
+    </ul>
+    <div class="order-form__contain-contact-fields">
+      <label class="order-form__label" for="name">ПІБ:</label>
+      <input
+        class="order-form__input"
+        placeholder="ПІБ:"
+        type="text"
+        id="name"
+        name="name"
+        required
+      />
+
+      <label class="order-form__label" for="email">Електронна пошта:</label>
+      <input
+        class="order-form__input"
+        placeholder="Електронна пошта:"
+        type="email"
+        id="email"
+        name="email"
+        required
+      />
+
+      <label class="order-form__label" for="address">Ваша адреса:</label>
+      <input
+        class="order-form__input"
+        placeholder="Ваша адреса:"
+        type="text"
+        id="address"
+        name="address"
+        required
+      />
+
+      <label class="order-form__label" for="comments">Коментар:</label>
+      <textarea
+        class="order-form__textarea"
+        name="comments"
+        id="comments"
+        rows="4"
+        placeholder="Введіть коментар"
+      ></textarea>
+    </div>
+    <div class="order-form__contain-button">
+      <button class="order-form__button" type="submit">Замовити</button>
+    </div>
+  </div>
+</form>

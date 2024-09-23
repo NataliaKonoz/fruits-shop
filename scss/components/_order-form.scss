@@ -1,0 +1,173 @@
+.order-form {
+  background-color: var(--color-brand-white);
+  border-radius: 20px;
+  max-width: 890px;
+
+  @media screen and (max-width: $--bp-tablet) {
+    overflow: hidden;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    color: var(--color-brand-red);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+
+    @media screen and (max-width: $--bp-mobile) {
+      font-size: 28px;
+    }
+  }
+
+  &__button-close {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__list-item {
+    border-radius: 20px;
+    width: 256px;
+    height: 300px;
+    cursor: pointer;
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 80%;
+      height: 128px;
+    }
+
+    &--pink {
+      background-color: #f8766b;
+    }
+
+    &--yellow {
+      background-color: rgb(237, 210, 81);
+    }
+
+    &--green {
+      background-color: rgb(157, 194, 98);
+    }
+  }
+
+  &__checkbox {
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 1px solid var(--color-brand-white);
+  }
+
+  &__container-checkbox-mark {
+    width: 16px;
+    height: 16px;
+  }
+
+  &__checkbox-mark {
+    width: 10px;
+    display: block;
+    border: 1px solid;
+
+    &--right {
+      transform: rotate(-60deg);
+      position: absolute;
+    }
+    &--left {
+      transform: rotate(80deg);
+      position: absolute;
+      left: -4px;
+    }
+  }
+
+  &__list-title {
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  &__list-image {
+    width: 80%;
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 96px;
+    }
+  }
+
+  &__contain-contact-fields {
+    max-width: 360px;
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 312px;
+    }
+
+    &::after {
+      content: '';
+      background-image: url('../images/order-form/woman-with-banana.png');
+      background-size: contain;
+      width: 470px;
+      height: 460px;
+    }
+  }
+
+  &__input {
+    border-radius: 100px;
+    opacity: 30%;
+  }
+
+  &__textarea {
+    border-radius: 20px;
+    opacity: 30%;
+    resize: none;
+    height: 145px;
+  }
+
+  &__contain-button {
+    width: 136px;
+  }
+
+  &__button {
+    background-color: var(--color-brand-green);
+    border: none;
+    cursor: pointer;
+    color: var(--color-brand-white);
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    z-index: 1;
+    overflow: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+      box-shadow 0.3s ease;
+
+    @media screen and (max-width: $--bp-mobile) {
+      width: 134px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 300%;
+      height: 300%;
+      background-color: var(--color-brand-green);
+      border-radius: 50%;
+      transition: width 0.4s ease, height 0.4s ease, top 0.4s ease,
+        left 0.4s ease;
+      transform: translate(-50%, -50%);
+      z-index: -1;
+    }
+
+    &:hover::before {
+      width: 0;
+      height: 0;
+    }
+
+    &:hover {
+      color: var(--color-brand-green);
+      background-color: var(--color-brand-white);
+      box-shadow: 0 0 20px rgba(25, 167, 7, 0.6);
+      transform: scale(1.05);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
