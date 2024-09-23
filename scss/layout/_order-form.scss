@@ -7,7 +7,7 @@
 
   &__main-container {
     position: absolute;
-    top: 34px;
+    top: 58px;
     left: -126%;
     margin: 0 auto;
 
@@ -42,7 +42,7 @@
 
     @media screen and (max-width: $--bp-mobile) {
       top: 10px;
-      right: 10px;
+      right: 20px;
     }
   }
 

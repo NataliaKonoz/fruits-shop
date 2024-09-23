@@ -25,7 +25,7 @@
     line-height: 1.1;
 
     @media screen and (max-width: $--bp-mobile) {
-      font-size: 28px;
+      font-size: 24px;
     }
   }
 
@@ -104,7 +104,7 @@
     max-width: 360px;
 
     @media screen and (max-width: $--bp-mobile) {
-      width: 312px;
+      width: 290px;
     }
 
     &::after {
