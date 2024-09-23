@@ -72,7 +72,6 @@
 
   &__checkbox-mark {
     width: 10px;
-    display: block;
     border: 1px solid;
 
     &--right {
@@ -82,7 +81,6 @@
     &--left {
       transform: rotate(80deg);
       position: absolute;
-      left: -4px;
     }
   }
 

@@ -3,18 +3,31 @@ const loadFormBtn = document.querySelectorAll('[id^="showFormBtn"]');
 const removeFormBtn = document.querySelector('#removeFormBtn');
 const main = document.getElementById('mainContent');
 const footer = document.getElementById('footer');
-const listItem = document.getElementById('[id^="listItem"]');
 
 document.addEventListener('DOMContentLoaded', function () {
   fetch('/pages/order-form.html')
     .then(response => response.text())
     .then(data => {
       formContainer.insertAdjacentHTML('beforeend', data);
+
+      const checkboxes = document.querySelectorAll('.order-form__list-item');
+      checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('click', () => {
+          const container = checkbox.firstElementChild;
+
+          if (checkbox.classList.contains('checked')) {
+            checkbox.classList.remove('checked');
+            container.style.display = 'none';
+          } else {
+            checkbox.classList.add('checked');
+            container.style.display = 'block';
+          }
+        });
+      });
     });
 });
 
 formContainer.classList.add('hidden');
-
 loadFormBtn.forEach(btn => {
   btn.addEventListener('click', () => {
     if (formContainer.classList.contains('hidden')) {
